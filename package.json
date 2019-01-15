@@ -1,0 +1,15 @@
+{
+  "name": "pig-latin-translator",
+  "version": "0.0.1",
+  "description": "translates input pig-latin phases",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --bail --watch"
+  },
+  "author": "Tyler M",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
