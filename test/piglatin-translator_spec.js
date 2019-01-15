@@ -23,4 +23,19 @@ describe("The Pig-Latin translation", function () {
     let translation = primeModule.pigLatinTranslator('its over 9000!!!');
     translation.should.equal('This phrase is not piglatin');
   });
+
+  it("for 'do you come in peace?' should be 'o-day ou-yay ome-cay in-ay eace-pay'", function () {
+    let translation = primeModule.toPigLatinTranslator('do you come in peace');
+    translation.should.equal('o-day ou-yay ome-cay in-ay eace-pay');
+  });
+
+  it("for 'we do not consent to probing' should be 'e-way o-day ot-nay onsent-cay o-tay obing-pray'", function () {
+    let translation = primeModule.toPigLatinTranslator('we do not consent to probing');
+    translation.should.equal('e-way o-day ot-nay onsent-cay o-tay obing-pray');
+  });
+
+  it("should return 'Not a string", function () {
+    let translation = primeModule.toPigLatinTranslator(60085);
+    translation.should.equal("Not a string");
+  });
 });
